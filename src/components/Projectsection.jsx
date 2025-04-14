@@ -4,7 +4,7 @@ import linkIcon from '../assets/link-icon.png';
 import gym from "../assets/Error-tech.png";
 import Dashboard from "../assets/Dashboard.png";
 import resume from "../assets/resume.png"
-
+import edu from '../assets/edu.png'
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   
@@ -34,7 +34,7 @@ const Projects = () => {
       githubLink: "https://github.com/Satheshwaran26/Resume-AI.git",
     },
     {
-      imgSrc: "./src/assets/edu.png",
+      imgSrc: edu,
       category: "Product Design",
       title: "Mobile Application Development",
       description: "Develop a mobile application with excellent performance.",
