@@ -323,7 +323,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen py-20 relative overflow-hidden">
+    <div className="min-h-screen pt-20 prelative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1a1a1a] opacity-50 blur-[180px] rounded-full pointer-events-none"></div>
       <div className="absolute bottom-40 left-20 w-[500px] h-[500px] bg-[#1a1a1a] opacity-50 blur-[200px] rounded-full pointer-events-none"></div>
@@ -372,6 +372,19 @@ const BlogPost = () => {
                 </div>
               );
             })}
+            
+            {/* Thank You Section */}
+            <div className="mt-12 pt-8 border-t border-[#2a2a2a]">
+              <div className="text-center">
+                <p className="text-gray-300 text-lg font-light italic">
+                  Thank you for reading!
+                </p>
+                <p className="text-gray-400 text-sm mt-2">
+                  If you found this article helpful, feel free to share it with others.
+                </p>
+             
+              </div>
+            </div>
           </div>
 
           {/* Content Styling */}
@@ -469,33 +482,7 @@ const BlogPost = () => {
             }
           `}</style>
 
-          <div className="mt-12 pt-8 border-t border-[#2a2a2a]">
-            <h2 className="text-2xl font-light text-white mb-6">Share this post</h2>
-            <div className="flex space-x-6">
-          
-              <a 
-                href="#" 
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
-              >
-                <i className="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
-                <span>LinkedIn</span>
-              </a>
-              <a 
-                href="#" 
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
-              >
-                <i className="fab fa-instagram text-xl group-hover:scale-110 transition-transform"></i>
-                <span>Facebook</span>
-              </a>
-              <a 
-                href="#" 
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
-              >
-                <i className="fab fa-github text-xl group-hover:scale-110 transition-transform"></i>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
+      
         </motion.div>
       </div>
     </div>
