@@ -28,7 +28,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="text-2xl font-light text-[#c0c0c0] mb-6"
           >
-            Satheshwaran
+            Satheshwaran V
           </motion.h2>
           
           {/* Navigation */}

@@ -170,16 +170,16 @@ const ContactSection = () => {
               variants={itemVariants}
               className="text-3xl md:text-4xl font-light mb-6 text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-[#c0c0c0] to-[#8a8a8a]"
             >
-              Drop me a line or say <span className="text-yellow-400">👋</span>  on social networks
+              Let's build something amazing together
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
               className="text-[#9c9c9c] text-base md:text-lg mb-10 text-center md:text-left leading-relaxed"
             >
-              Whether you're a design team in need of support or an early-stage
-              company looking to level up your design, I'd love to talk about your
-              project <span className="text-purple-400">💜</span>
+              I'm passionate about creating exceptional digital experiences. Whether you need a custom website, 
+              robust web application, or help with a challenging project, I'm ready to collaborate and bring your vision to life. 
+              <span className="text-purple-400"> Feel free to reach out!</span>
             </motion.p>
 
             {/* Contact grid */}
@@ -189,10 +189,9 @@ const ContactSection = () => {
             >
               {/* Left side - Social Icons */}
               <div className="space-y-6">
-                <h3 className="text-xl font-light mb-4">Connect with me</h3>
+                <h3 className="text-xl font-light mb-4">Ways to connect</h3>
                 
                 <div className="flex flex-wrap gap-4">
-               
                   <a
                     href="https://www.linkedin.com/in/sathes-waran-v/"
                 target="_blank"
@@ -231,14 +230,20 @@ const ContactSection = () => {
                     <div className="w-8 h-8 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(68,68,68,0.4)] flex items-center justify-center">
                       <i className="fas fa-map-marker-alt text-sm text-gray-400"></i>
                     </div>
-                    <span className="text-gray-300">Coimbatore , Tamil Nadu , India</span>
+                    <span className="text-gray-300">Coimbatore, Tamil Nadu, India</span>
+                  </div>
+
+                  <div className="mt-8 p-4 bg-[rgba(255,255,255,0.03)] border border-[rgba(68,68,68,0.4)] rounded-lg">
+                    <h4 className="text-gray-300 font-light mb-2">Current availability:</h4>
+                    <p className="text-gray-400 text-sm">I'm currently available for freelance projects, part-time roles, and consulting opportunities. My typical response time is within 24 hours.</p>
                   </div>
                 </div>
               </div>
               
               {/* Right side - Quick Contact Form */}
               <div className="bg-[rgba(17,17,17,0.4)] backdrop-blur-sm border border-[rgba(68,68,68,0.4)] rounded-xl p-6">
-                <h3 className="text-xl font-light mb-4">Send a quick message</h3>
+                <h3 className="text-xl font-light mb-4">Get in touch</h3>
+                <p className="text-gray-400 text-sm mb-4">Have a question or project in mind? Send me a message and I'll get back to you as soon as possible.</p>
                 
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
                   <div>
@@ -303,6 +308,8 @@ const ContactSection = () => {
                 </form>
               </div>
             </motion.div>
+
+        
           </div>
         </div>
       </motion.div>

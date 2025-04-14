@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import aiLifeImg from '../assets/ailife.jpg';
+import nodejsImg from '../assets/nodejs.webp';
+import cloudImg from '../assets/cloud.jpeg';
 const BlogShowcase = () => {
   // Sample blog posts data (you can use the same data from Blog.jsx)
   const featuredPosts = [
@@ -12,7 +14,7 @@ const BlogShowcase = () => {
       category: 'Technology',
       date: 'March 15, 2024',
       readTime: '5 min read',
-      image: 'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80'
+      image: aiLifeImg
     },
     {
       id: 2,
@@ -21,7 +23,7 @@ const BlogShowcase = () => {
       category: 'Backend',
       date: 'March 10, 2024',
       readTime: '8 min read',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+         image: nodejsImg
     },
     {
       id: 3,
@@ -30,7 +32,7 @@ const BlogShowcase = () => {
       category: 'Cloud',
       date: 'March 5, 2024',
       readTime: '6 min read',
-      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+     image: cloudImg
     }
   ];
 
@@ -142,9 +144,21 @@ const BlogShowcase = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link 
-            to="/blog" 
+          <Link
+            to="/blog"
             className="inline-flex items-center px-6 py-3 border border-[#2a2a2a] text-gray-400 hover:text-white hover:border-[#3a3a3a] rounded-lg transition-all duration-300"
+            onClick={(e) => {
+              // Prevent default navigation behavior
+              e.preventDefault();
+              
+              // Navigate programmatically
+              window.location.href = '/blog';
+              
+              // Force scroll to top
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 0);
+            }}
           >
             <span>View All Articles</span>
             <i className="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
@@ -155,4 +169,4 @@ const BlogShowcase = () => {
   );
 };
 
-export default BlogShowcase; 
+export default BlogShowcase;

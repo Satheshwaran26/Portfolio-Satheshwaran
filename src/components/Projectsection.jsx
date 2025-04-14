@@ -12,7 +12,7 @@ const Projects = () => {
     {
       imgSrc: gym,
       category: "Product Design",
-      title: "Mobile Application Design",
+      title: "Error Tech Service Website",
       description: "Build a mobile application with a clean and modern user interface.",
       link: "https://erro-tech.vercel.app/",
       githubLink: "https://github.com/Satheshwaran26/tech-Web.git",
@@ -219,12 +219,12 @@ const Projects = () => {
           className="text-center mt-12 md:mt-20"
         >
           <a
-            href="https://example.com/projects"
+            href="https://github.com/Satheshwaran26"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-3.5 text-[#c0c0c0] font-light border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(68,68,68,0.6)] hover:bg-[rgba(68,68,68,0.2)] text-sm md:text-base"
           >
-            View More Projects
+            View More Projects in Github
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
             </svg>
