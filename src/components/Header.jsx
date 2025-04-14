@@ -172,8 +172,13 @@ function Header() {
                         else if (item === "Connect") openLinkedIn();
                       } else if (item === "Connect") {
                         openLinkedIn();
-                      } else if (item === "Home") {
-                        setMenuOpen(false);
+                      } else if (item !== "Blog") {
+                        // Navigate to home first, then after a short delay scroll to section
+                        if (location.pathname !== "/") {
+                          window.location.href = `/#${item.toLowerCase()}`;
+                        } else {
+                          setMenuOpen(false);
+                        }
                       }
                     }}
                   >
@@ -182,7 +187,7 @@ function Header() {
                     ) : item === "Connect" ? (
                       <span className="flex items-center gap-2">{item}</span>
                     ) : (
-                      <Link to="/" onClick={() => setMenuOpen(false)}>{item}</Link>
+                      <Link to={`/${item === "Home" ? "" : "#" + item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</Link>
                     )}
                   </li>
                 )
