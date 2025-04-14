@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
-// Import images
 import aiLifeImg from '../assets/ailife.jpg';
 import nodejsImg from '../assets/nodejs.webp';
 import cloudImg from '../assets/cloud.jpeg';
