@@ -2,11 +2,19 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+// Import images
+import aiLifeImg from '../assets/ailife.jpg';
+import nodejsImg from '../assets/nodejs.webp';
+import cloudImg from '../assets/cloud.jpeg';
+import alexaImg from '../assets/alexa.jpeg';
+import techskillsImg from '../assets/techskills.jpeg';
+import web3Img from '../assets/web3.jpg';
+
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Sample blog posts data
+  // Sample blog posts data with imported images
   const blogPosts = [
     {
       id: 1,
@@ -15,7 +23,7 @@ const Blog = () => {
       category: 'technology',
       date: 'March 15, 2024',
       readTime: '5 min read',
-      image: './src/assets/ailife.jpg'
+      image: aiLifeImg
     },
     {
       id: 2,
@@ -24,7 +32,7 @@ const Blog = () => {
       category: 'backend',
       date: 'March 10, 2024',
       readTime: '8 min read',
- image: './src/assets/nodejs.webp'
+      image: nodejsImg
     },
     {
       id: 3,
@@ -33,7 +41,7 @@ const Blog = () => {
       category: 'cloud',
       date: 'March 5, 2024',
       readTime: '6 min read',
-image: './src/assets/cloud.jpeg'
+      image: cloudImg
     },
     {
       id: 4,
@@ -42,7 +50,7 @@ image: './src/assets/cloud.jpeg'
       category: 'iot',
       date: 'February 28, 2024',
       readTime: '7 min read',
-      image: './src/assets/alexa.jpeg'
+      image: alexaImg
     },
     {
       id: 5,
@@ -51,7 +59,7 @@ image: './src/assets/cloud.jpeg'
       category: 'career',
       date: 'February 20, 2024',
       readTime: '4 min read',
-      image: './src/assets/techskills.jpeg'
+      image: techskillsImg
     },
     {
       id: 6,
@@ -60,7 +68,7 @@ image: './src/assets/cloud.jpeg'
       category: 'web3',
       date: 'February 12, 2024',
       readTime: '6 min read',
-      image: './src/assets/web3.jpg'
+      image: web3Img
     }
   ];
   
@@ -191,4 +199,4 @@ image: './src/assets/cloud.jpeg'
   );
 };
 
-export default Blog; 
+export default Blog;
