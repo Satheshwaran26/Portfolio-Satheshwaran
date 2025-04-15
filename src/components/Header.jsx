@@ -204,9 +204,9 @@ function Header() {
         >
           <motion.span
             initial={{ rotate: 0 }}
-            animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 10 : 0 }}
+            animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 9 : 0 }}
             transition={{ duration: 0.3 }}
-            className="block w-full h-[2px] bg-white origin-center rounded-full shadow-sm"
+            className="block w-full h-[1px] bg-white origin-center rounded-full shadow-sm"
             style={{ marginBottom: "8px" }}
           ></motion.span>
           <motion.span
@@ -217,14 +217,14 @@ function Header() {
               width: "75%",
             }}
             transition={{ duration: 0.3 }}
-            className="block h-[2px] bg-white rounded-xl shadow-sm"
+            className="block h-[1px] bg-white rounded-xl shadow-sm"
             style={{ marginBottom: "8px", alignSelf: "flex-end" }}
           ></motion.span>
           <motion.span
             initial={{ rotate: 0 }}
-            animate={{ rotate: menuOpen ? -45 : 0, y: menuOpen ? -10 : 0 }}
+            animate={{ rotate: menuOpen ? -45 : 0, y: menuOpen ? -9 : 0 }}
             transition={{ duration: 0.3 }}
-            className="block w-full h-[2px] bg-white origin-center rounded-full shadow-sm"
+            className="block w-full h-[1px] bg-white origin-center rounded-full shadow-sm"
           ></motion.span>
         </div>
       </motion.nav>
