@@ -7,41 +7,41 @@ import resume from "../assets/resume.png"
 import edu from '../assets/edu.png'
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  
   const projectData = [
     {
       imgSrc: gym,
-      category: "Product Design",
+      category: "Service Website",
       title: "Error Tech Service Website",
-      description: "Build a mobile application with a clean and modern user interface.",
+      description: "A responsive tech service site with a service booking system, product showcase, and blog page. Designed with an attractive UI for seamless user experience.",
       link: "https://erro-tech.vercel.app/",
       githubLink: "https://github.com/Satheshwaran26/tech-Web.git",
-    },    
+    },
     {
       imgSrc: Dashboard,
-      category: "Product Design",
-      title: "Website Makeup Design",
-      description: "Redesign a website with a fresh and modern look.",
+      category: "Dashboard",
+      title: "Social Media Dashboard",
+      description: "A visually appealing social media analytics dashboard that displays post engagement and follower metrics with a modern UI and responsive design.",
       link: "https://social-dashboard-project.vercel.app/",
       githubLink: "https://github.com/Satheshwaran26/Social-Media-dashboard.git",
     },
     {
       imgSrc: resume,
-      category: "Product Design",
-      title: "Brand Identity and Motion Design",
-      description: "Create a unique brand identity and motion graphics.",
+      category: "Resume Builder",
+      title: "Resume Builder with AI", 
+      description: "An AI-powered resume builder with prompt-based and manual options, ATS scanner, and auto content generation using Gemini API. Built with Tailwind CSS for a clean UI.",
       link: "https://resume-builder-ai-project.vercel.app/",
       githubLink: "https://github.com/Satheshwaran26/Resume-AI.git",
     },
     {
       imgSrc: edu,
-      category: "Product Design",
-      title: "Mobile Application Development",
-      description: "Develop a mobile application with excellent performance.",
+      category: "Education Site",
+      title: "Educraft-Empower Website",
+      description: "An educational platform featuring AI-generated videos, interactive quizzes, and certification. Developed as part of the Google Developer Groups Hackathon.",
       link: "https://educraft-empower.vercel.app/",
       githubLink: "https://github.com/Satheshwaran26/educraft-empower.git",
     },
   ];
+  
 
   // Left side animation variants
   const leftVariants = {

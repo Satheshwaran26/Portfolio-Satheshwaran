@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profileImage from "../assets/sathes-profile.jpg";
-
+// Remove the direct PDF import that's causing the error
 
 function Hero() {
     return (
@@ -12,95 +12,96 @@ function Hero() {
          
         {/* Text Section - Now appears first on mobile and desktop */}
         <motion.div
-          className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 mb-10 lg:mb-0"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          {/* Role Badge */}
-          <motion.span
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-block py-2 px-4 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full text-[0.9em] sm:text-[1em] md:text-[1.2em] mb-4 font-[200]"
-          >
-            <span className="flex items-center">
-            ⭐
-              Code Developer
-            </span>
-          </motion.span>
+  className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 mb-10 lg:mb-0"
+  initial={{ opacity: 0, x: -50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
+  {/* Role Badge */}
+  <motion.span
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 0.6, delay: 0.4 }}
+    className="inline-block py-2 px-4 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full text-[0.9em] sm:text-[1em] md:text-[1.2em] mb-4 font-[200]"
+  >
+    <span className="flex items-center">
+      ⭐ Creative Code Crafter
+    </span>
+  </motion.span>
 
-          {/* Headings */}
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-[1.4em] sm:text-[1.6em] md:text-[2.2em] text-[#c0c0c0] font-[200]"
-          >
-            Hi, I am <span className="text-white">Satheshwaran V</span> 👋
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className="text-[1.2em] sm:text-[1.5em] md:text-[2.2em] font-extralight mb-[10px] mt-[8px] max-w-full text-[#AEAEAE] font-poppins"
-          >
-            I am Passionate in Web Development and Programmer 
-          </motion.h1>
+  {/* Headings */}
+  <motion.h1
+    initial={{ opacity: 0, y: -30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.5 }}
+    className="text-[1.4em] sm:text-[1.6em] md:text-[2.2em] text-[#c0c0c0] font-[200]"
+  >
+    Hey there, I’m <span className="text-white">Satheshwaran V</span> 👋
+  </motion.h1>
+  <motion.h1
+    initial={{ opacity: 0, y: -30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, delay: 0.6 }}
+    className="text-[1.2em] sm:text-[1.5em] md:text-[2.2em] font-extralight mb-[10px] mt-[8px] max-w-full text-[#AEAEAE] font-poppins"
+  >
+    A Passionate Web Developer & Problem Solver
+  </motion.h1>
 
-          {/* Paragraph */}
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-1 mb-8 font-extralight text-[0.9em] sm:text-[1em] md:text-[1.1em] text-[#C0C0C0] max-w-[600px]"
-          >
-            Crafting beautiful, user-centered experiences that shine with
-            creativity and innovation.
-          </motion.p>
+  <motion.p
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.7 }}
+  className="mt-1 mb-8 font-extralight text-[0.9em] sm:text-[1em] md:text-[1.1em] text-[#C0C0C0] max-w-[600px]"
+>
+  I design sleek, responsive websites and bring ideas to life with clean code. Dive in, get inspired, and let’s build something awesome!
+</motion.p>
 
-          {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex gap-4 sm:space-x-4 h-auto text-[0.9em] sm:text-[1em] md:text-[1.2em] font-[200] w-full sm:w-auto"
-          >
-            <a
-              href="path-to-cv.pdf"
-              className="py-3 px-6 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full text-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300 w-full sm:w-auto"
-              download="YourCVName.pdf"
-            >
-              Download CV
-            </a>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.linkedin.com/in/sathes-waran-v/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
-              >
-                <i className="fab fa-linkedin text-lg"></i>
-              </a>
-              <a
-                href="https://instagram.com/_ryzxn_26"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
-              >
-                <i className="fab fa-instagram text-lg"></i>
-              </a>
-              <a
-                href="https://github.com/Satheshwaran26"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
-              >
-                <i className="fab fa-github text-lg"></i>
-              </a>
-            </div>
-          </motion.div>
-        </motion.div>
+
+  {/* Buttons */}
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8, delay: 0.8 }}
+    className="flex gap-4 sm:space-x-4 h-auto text-[0.9em] sm:text-[1em] md:text-[1.2em] font-[200] w-full sm:w-auto"
+  >
+    <a
+      href="/Satheshwaran-V-Resume.pdf" // Use a public folder path instead of import
+      className="py-3 px-6 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full text-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300 w-full sm:w-auto"
+      download="Satheswaran-V-Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download CV
+    </a>
+    <div className="flex items-center gap-4">
+      <a
+        href="https://www.linkedin.com/in/sathes-waran-v/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
+      >
+        <i className="fab fa-linkedin text-lg"></i>
+      </a>
+      <a
+        href="https://instagram.com/_ryzxn_26"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
+      >
+        <i className="fab fa-instagram text-lg"></i>
+      </a>
+      <a
+        href="https://github.com/Satheshwaran26"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 border border-[rgba(68,68,68,0.4)] bg-[rgba(17,17,17,0.3)] backdrop-blur-[15px] text-gray-300 rounded-full flex items-center justify-center hover:border-[rgba(120,120,120,0.4)] hover:text-white transition-all duration-300"
+      >
+        <i className="fab fa-github text-lg"></i>
+      </a>
+    </div>
+  </motion.div>
+</motion.div>
+
         
         {/* Profile Image - Now appears second on mobile and desktop */}
         <motion.div
